@@ -1,0 +1,314 @@
+Program Version,EnergyPlus, Version 9.5.0-de239b2e5f, YMD=2025.08.19 05:49
+! This file shows details about the branches, nodes, and other
+! elements of the flow connections.
+! This file is intended for use in "debugging" potential problems
+! that may also be detected by the program, but may be more easily
+! identified by "eye".
+! This file is also intended to support software which draws a
+! schematic diagram of the HVAC system.
+! ===============================================================
+! #Nodes,<Number of Unique Nodes>
+ #Nodes,34
+! <Node>,<NodeNumber>,<Node Name>,<Node Fluid Type>,<# Times Node Referenced After Definition>
+ Node,1,DAIKIN ONE STAGE HP AIR LOOP INLET,Air,3
+ Node,2,DAIKIN ONE STAGE HP MIXED AIR OUTLET,Air,7
+ Node,3,DAIKIN ONE STAGE HP HEATING COIL OUTLET,Air,5
+ Node,4,DAIKIN ONE STAGE HP OUTDOOR AIR INLET,Air,2
+ Node,5,DAIKIN ONE STAGE HP COOLING COIL CONDENSER INLET,Air,1
+ Node,6,ROOM_LIVING ZONE AIR NODE,Air,1
+ Node,7,ROOM_LIVING SUPPLY INLET,Air,3
+ Node,8,DAIKIN ONE STAGE HP SUPPLY FAN OUTLET,Air,2
+ Node,9,ROOM_BDR_2 ZONE AIR NODE,Air,0
+ Node,10,ROOM_BDR_2 SUPPLY INLET,Air,2
+ Node,11,ROOM_BDR_2 RETURN OUTLET,Air,1
+ Node,12,ROOM_BDR_3 ZONE AIR NODE,Air,0
+ Node,13,ROOM_BDR_3 SUPPLY INLET,Air,2
+ Node,14,ROOM_BDR_3 RETURN OUTLET,Air,1
+ Node,15,ROOM_BATH ZONE AIR NODE,Air,0
+ Node,16,ROOM_BATH SUPPLY INLET,Air,2
+ Node,17,ROOM_BATH RETURN OUTLET,Air,1
+ Node,18,ROOM_LIVING RETURN OUTLET,Air,1
+ Node,19,ROOM_BDR_1 ZONE AIR NODE,Air,0
+ Node,20,ROOM_BDR_1 SUPPLY INLET,Air,2
+ Node,21,ROOM_BDR_1 RETURN OUTLET,Air,1
+ Node,22,ROOM_UTILITY ZONE AIR NODE,Air,0
+ Node,23,ROOM_UTILITY SUPPLY INLET,Air,2
+ Node,24,ROOM_UTILITY RETURN OUTLET,Air,1
+ Node,25,DAIKIN ONE STAGE HP SUPPLY PATH INLET,Air,2
+ Node,26,DAIKIN ONE STAGE HP RETURN AIR OUTLET,Air,2
+ Node,27,ROOM_BDR_2 ZONE EQUIP INLET,Air,1
+ Node,28,ROOM_BDR_3 ZONE EQUIP INLET,Air,1
+ Node,29,ROOM_BATH ZONE EQUIP INLET,Air,1
+ Node,30,ROOM_LIVING ZONE EQUIP INLET,Air,1
+ Node,31,ROOM_BDR_1 ZONE EQUIP INLET,Air,1
+ Node,32,ROOM_UTILITY ZONE EQUIP INLET,Air,1
+ Node,33,DAIKIN ONE STAGE HP RELIEF AIR OUTLET,Air,1
+ Node,34,DAIKIN ONE STAGE HP COOLING COIL OUTLET,Air,1
+! ===============================================================
+! Suspicious nodes have 0 references.  It is normal for some nodes, however.
+! Listing nodes with 0 references (culled from previous list):
+! <Suspicious Node>,<NodeNumber>,<Node Name>,<Node Fluid Type>,<# Times Node Referenced After Definition>
+ Suspicious Node,9,ROOM_BDR_2 ZONE AIR NODE,Air,0
+ Suspicious Node,12,ROOM_BDR_3 ZONE AIR NODE,Air,0
+ Suspicious Node,15,ROOM_BATH ZONE AIR NODE,Air,0
+ Suspicious Node,19,ROOM_BDR_1 ZONE AIR NODE,Air,0
+ Suspicious Node,22,ROOM_UTILITY ZONE AIR NODE,Air,0
+! ===============================================================
+! <#Branch Lists>,<Number of Branch Lists>
+ #Branch Lists,1
+! <Branch List>,<Branch List Count>,<Branch List Name>,<Loop Name>,<Loop Type>,<Number of Branches>
+! <Branch>,<Branch Count>,<Branch Name>,<Loop Name>,<Loop Type>,<Branch Inlet Node Name>,<Branch Outlet Node Name>
+ Branch List,1,DAIKIN ONE STAGE HP BRANCHES,DAIKIN ONE STAGE HP,Air,1
+   Branch,1,DAIKIN ONE STAGE HP MAIN BRANCH,DAIKIN ONE STAGE HP,Air,DAIKIN ONE STAGE HP AIR LOOP INLET,DAIKIN ONE STAGE HP HEATING COIL OUTLET
+! ===============================================================
+! <#Supply Air Paths>,<Number of Supply Air Paths>
+ #Supply Air Paths,1
+! <Supply Air Path>,<Supply Air Path Count>,<Supply Air Path Name>,<AirLoopHVAC Name>
+! <#Components on Supply Air Path>,<Number of Components>
+! <Supply Air Path Component>,<Component Count>,<Component Type>,<Component Name>,<AirLoopHVAC Name>
+! <#Outlet Nodes on Supply Air Path Component>,<Number of Nodes>
+! <Supply Air Path Component Nodes>,<Node Count>,<Component Type>,<Component Name>,<Inlet Node Name>,<Outlet Node Name>,<AirLoopHVAC Name>
+ Supply Air Path,1,DAIKIN ONE STAGE HP SUPPLY PATH,DAIKIN ONE STAGE HP
+   #Components on Supply Air Path,1
+   Supply Air Path Component,1,AIRLOOPHVAC:ZONESPLITTER,DAIKIN ONE STAGE HP ZONE SPLITTER,DAIKIN ONE STAGE HP
+     #Outlet Nodes on Supply Air Path Component,6
+     Supply Air Path Component Nodes,1,AIRLOOPHVAC:ZONESPLITTER,DAIKIN ONE STAGE HP ZONE SPLITTER,DAIKIN ONE STAGE HP SUPPLY PATH INLET,ROOM_BDR_2 ZONE EQUIP INLET,DAIKIN ONE STAGE HP
+     Supply Air Path Component Nodes,2,AIRLOOPHVAC:ZONESPLITTER,DAIKIN ONE STAGE HP ZONE SPLITTER,DAIKIN ONE STAGE HP SUPPLY PATH INLET,ROOM_BDR_3 ZONE EQUIP INLET,DAIKIN ONE STAGE HP
+     Supply Air Path Component Nodes,3,AIRLOOPHVAC:ZONESPLITTER,DAIKIN ONE STAGE HP ZONE SPLITTER,DAIKIN ONE STAGE HP SUPPLY PATH INLET,ROOM_BATH ZONE EQUIP INLET,DAIKIN ONE STAGE HP
+     Supply Air Path Component Nodes,4,AIRLOOPHVAC:ZONESPLITTER,DAIKIN ONE STAGE HP ZONE SPLITTER,DAIKIN ONE STAGE HP SUPPLY PATH INLET,ROOM_LIVING ZONE EQUIP INLET,DAIKIN ONE STAGE HP
+     Supply Air Path Component Nodes,5,AIRLOOPHVAC:ZONESPLITTER,DAIKIN ONE STAGE HP ZONE SPLITTER,DAIKIN ONE STAGE HP SUPPLY PATH INLET,ROOM_BDR_1 ZONE EQUIP INLET,DAIKIN ONE STAGE HP
+     Supply Air Path Component Nodes,6,AIRLOOPHVAC:ZONESPLITTER,DAIKIN ONE STAGE HP ZONE SPLITTER,DAIKIN ONE STAGE HP SUPPLY PATH INLET,ROOM_UTILITY ZONE EQUIP INLET,DAIKIN ONE STAGE HP
+! <#Nodes on Supply Air Path>,<Number of Nodes>
+! <Supply Air Path Node>,<Node Type>,<Node Count>,<Node Name>,<AirLoopHVAC Name>
+#Nodes on Supply Air Path,7
+   Supply Air Path Node,Inlet Node,1,DAIKIN ONE STAGE HP SUPPLY PATH INLET,DAIKIN ONE STAGE HP
+   Supply Air Path Node,Outlet Node,2,ROOM_BDR_2 ZONE EQUIP INLET,DAIKIN ONE STAGE HP
+   Supply Air Path Node,Outlet Node,3,ROOM_BDR_3 ZONE EQUIP INLET,DAIKIN ONE STAGE HP
+   Supply Air Path Node,Outlet Node,4,ROOM_BATH ZONE EQUIP INLET,DAIKIN ONE STAGE HP
+   Supply Air Path Node,Outlet Node,5,ROOM_LIVING ZONE EQUIP INLET,DAIKIN ONE STAGE HP
+   Supply Air Path Node,Outlet Node,6,ROOM_BDR_1 ZONE EQUIP INLET,DAIKIN ONE STAGE HP
+   Supply Air Path Node,Outlet Node,7,ROOM_UTILITY ZONE EQUIP INLET,DAIKIN ONE STAGE HP
+! ===============================================================
+! <#Return Air Paths>,<Number of Return Air Paths>
+ #Return Air Paths,1
+! <Return Air Path>,<Return Air Path Count>,<Return Air Path Name>,<AirLoopHVAC Name>
+! <#Components on Return Air Path>,<Number of Components>
+! <Return Air Path Component>,<Component Count>,<Component Type>,<Component Name>,<AirLoopHVAC Name>
+! <#Inlet Nodes on Return Air Path Component>,<Number of Nodes>
+! <Return Air Path Component Nodes>,<Node Count>,<Component Type>,<Component Name>,<Inlet Node Name>,<Outlet Node Name>,<AirLoopHVAC Name>
+ Return Air Path,1,DAIKIN ONE STAGE HP RETURN PATH,DAIKIN ONE STAGE HP
+   #Components on Return Air Path,1
+   Return Air Path Component,1,AIRLOOPHVAC:ZONEMIXER,DAIKIN ONE STAGE HP ZONE MIXER,DAIKIN ONE STAGE HP
+     #Inlet Nodes on Return Air Path Component,6
+     Return Air Path Component Nodes,1,AIRLOOPHVAC:ZONEMIXER,DAIKIN ONE STAGE HP ZONE MIXER,ROOM_BDR_2 RETURN OUTLET,DAIKIN ONE STAGE HP RETURN AIR OUTLET,DAIKIN ONE STAGE HP
+     Return Air Path Component Nodes,2,AIRLOOPHVAC:ZONEMIXER,DAIKIN ONE STAGE HP ZONE MIXER,ROOM_BDR_3 RETURN OUTLET,DAIKIN ONE STAGE HP RETURN AIR OUTLET,DAIKIN ONE STAGE HP
+     Return Air Path Component Nodes,3,AIRLOOPHVAC:ZONEMIXER,DAIKIN ONE STAGE HP ZONE MIXER,ROOM_BATH RETURN OUTLET,DAIKIN ONE STAGE HP RETURN AIR OUTLET,DAIKIN ONE STAGE HP
+     Return Air Path Component Nodes,4,AIRLOOPHVAC:ZONEMIXER,DAIKIN ONE STAGE HP ZONE MIXER,ROOM_LIVING RETURN OUTLET,DAIKIN ONE STAGE HP RETURN AIR OUTLET,DAIKIN ONE STAGE HP
+     Return Air Path Component Nodes,5,AIRLOOPHVAC:ZONEMIXER,DAIKIN ONE STAGE HP ZONE MIXER,ROOM_BDR_1 RETURN OUTLET,DAIKIN ONE STAGE HP RETURN AIR OUTLET,DAIKIN ONE STAGE HP
+     Return Air Path Component Nodes,6,AIRLOOPHVAC:ZONEMIXER,DAIKIN ONE STAGE HP ZONE MIXER,ROOM_UTILITY RETURN OUTLET,DAIKIN ONE STAGE HP RETURN AIR OUTLET,DAIKIN ONE STAGE HP
+! <#Nodes on Return Air Path>,<Number of Nodes>
+! <Return Air Path Node>,<Node Type>,<Node Count>,<Node Name>,<AirLoopHVAC Name>
+   #Nodes on Return Air Path,7
+   Return Air Path Node,Outlet Node,1,DAIKIN ONE STAGE HP RETURN AIR OUTLET,DAIKIN ONE STAGE HP
+   Return Air Path Node,Inlet Node,2,ROOM_BDR_2 RETURN OUTLET,DAIKIN ONE STAGE HP
+   Return Air Path Node,Inlet Node,3,ROOM_BDR_3 RETURN OUTLET,DAIKIN ONE STAGE HP
+   Return Air Path Node,Inlet Node,4,ROOM_BATH RETURN OUTLET,DAIKIN ONE STAGE HP
+   Return Air Path Node,Inlet Node,5,ROOM_LIVING RETURN OUTLET,DAIKIN ONE STAGE HP
+   Return Air Path Node,Inlet Node,6,ROOM_BDR_1 RETURN OUTLET,DAIKIN ONE STAGE HP
+   Return Air Path Node,Inlet Node,7,ROOM_UTILITY RETURN OUTLET,DAIKIN ONE STAGE HP
+! ===============================================================
+! #Outdoor Air Nodes,<Number of Outdoor Air Nodes>
+ #Outdoor Air Nodes,2
+! <Outdoor Air Node>,<NodeNumber>,<Node Name>
+ Outdoor Air Node,4,DAIKIN ONE STAGE HP OUTDOOR AIR INLET
+ Outdoor Air Node,5,DAIKIN ONE STAGE HP COOLING COIL CONDENSER INLET
+! ===============================================================
+! <#Component Sets>,<Number of Component Sets>
+ #Component Sets,12
+! <Component Set>,<Component Set Count>,<Parent Object Type>,<Parent Object Name>,<Component Type>,<Component Name>,<Inlet Node ID>,<Outlet Node ID>,<Description>
+ Component Set,1,BRANCH,DAIKIN ONE STAGE HP MAIN BRANCH,AIRLOOPHVAC:OUTDOORAIRSYSTEM,DAIKIN ONE STAGE HP OA SYSTEM,DAIKIN ONE STAGE HP AIR LOOP INLET,DAIKIN ONE STAGE HP MIXED AIR OUTLET,Air Nodes
+ Component Set,2,BRANCH,DAIKIN ONE STAGE HP MAIN BRANCH,AIRLOOPHVAC:UNITARYSYSTEM,DAIKIN ONE STAGE HP UNITARY SYSTEM,DAIKIN ONE STAGE HP MIXED AIR OUTLET,DAIKIN ONE STAGE HP HEATING COIL OUTLET,Air Nodes
+ Component Set,3,ZONEHVAC:AIRDISTRIBUTIONUNIT,ROOM_BDR_2 ATU,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,ROOM_BDR_2 CV,ROOM_BDR_2 ZONE EQUIP INLET,ROOM_BDR_2 SUPPLY INLET,Air Nodes
+ Component Set,4,ZONEHVAC:AIRDISTRIBUTIONUNIT,ROOM_BDR_3 ATU,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,ROOM_BDR_3 CV,ROOM_BDR_3 ZONE EQUIP INLET,ROOM_BDR_3 SUPPLY INLET,Air Nodes
+ Component Set,5,ZONEHVAC:AIRDISTRIBUTIONUNIT,ROOM_BATH ATU,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,ROOM_BATH CV,ROOM_BATH ZONE EQUIP INLET,ROOM_BATH SUPPLY INLET,Air Nodes
+ Component Set,6,ZONEHVAC:AIRDISTRIBUTIONUNIT,ROOM_LIVING ATU,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,ROOM_LIVING CV,ROOM_LIVING ZONE EQUIP INLET,ROOM_LIVING SUPPLY INLET,Air Nodes
+ Component Set,7,ZONEHVAC:AIRDISTRIBUTIONUNIT,ROOM_BDR_1 ATU,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,ROOM_BDR_1 CV,ROOM_BDR_1 ZONE EQUIP INLET,ROOM_BDR_1 SUPPLY INLET,Air Nodes
+ Component Set,8,ZONEHVAC:AIRDISTRIBUTIONUNIT,ROOM_UTILITY ATU,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,ROOM_UTILITY CV,ROOM_UTILITY ZONE EQUIP INLET,ROOM_UTILITY SUPPLY INLET,Air Nodes
+ Component Set,9,AIRLOOPHVAC:OUTDOORAIRSYSTEM,DAIKIN ONE STAGE HP OA SYSTEM,OUTDOORAIR:MIXER,DAIKIN ONE STAGE HP OA MIXING BOX,DAIKIN ONE STAGE HP OUTDOOR AIR INLET,DAIKIN ONE STAGE HP MIXED AIR OUTLET,Air Nodes
+ Component Set,10,AIRLOOPHVAC:UNITARYSYSTEM,DAIKIN ONE STAGE HP UNITARY SYSTEM,FAN:ONOFF,DAIKIN ONE STAGE HP SUPPLY FAN,DAIKIN ONE STAGE HP MIXED AIR OUTLET,DAIKIN ONE STAGE HP SUPPLY FAN OUTLET,Air Nodes
+ Component Set,11,AIRLOOPHVAC:UNITARYSYSTEM,DAIKIN ONE STAGE HP UNITARY SYSTEM,COIL:COOLING:DX:SINGLESPEED,DAIKIN ONE STAGE HP COOLING COIL,DAIKIN ONE STAGE HP SUPPLY FAN OUTLET,DAIKIN ONE STAGE HP COOLING COIL OUTLET,Air Nodes
+ Component Set,12,AIRLOOPHVAC:UNITARYSYSTEM,DAIKIN ONE STAGE HP UNITARY SYSTEM,COIL:HEATING:DX:SINGLESPEED,DAIKIN ONE STAGE HP HEATING COIL,DAIKIN ONE STAGE HP COOLING COIL OUTLET,DAIKIN ONE STAGE HP HEATING COIL OUTLET,Air Nodes
+! ===============================================================
+! <# Plant Loops>,<Number of Plant Loops>
+ #Plant Loops,0
+! <Plant Loop>,<Plant Loop Name>,<Loop Type>,<Inlet Node Name>,<Outlet Node Name>,<Branch List>,<Connector List>
+! <Plant Loop Connector>,<Connector Type>,<Connector Name>,<Loop Name>,<Loop Type>,<Number of Inlets/Outlets>
+! <Plant Loop Connector Branches>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Branch>,<Outlet Branch>,<Loop Name>,<Loop Type>
+! <Plant Loop Connector Nodes>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Node>,<Outlet Node>,<Loop Name>,<Loop Type>
+! <Plant Loop Supply Connection>,<Plant Loop Name>,<Supply Side Outlet Node Name>,<Demand Side Inlet Node Name>
+! <Plant Loop Return Connection>,<Plant Loop Name>,<Demand Side Outlet Node Name>,<Supply Side Inlet Node Name>
+! ===============================================================
+! <# Condenser Loops>,<Number of Condenser Loops>
+ #Condenser Loops,0
+! <Condenser Loop>,<Condenser Loop Name>,<Loop Type>,<Inlet Node Name>,<Outlet Node Name>,<Branch List>,<Connector List>
+! <Condenser Loop Connector>,<Connector Type>,<Connector Name>,<Loop Name>,<Loop Type>,<Number of Inlets/Outlets>
+! <Condenser Loop Connector Branches>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Branch>,<Outlet Branch>,<Loop Name>,<Loop Type>
+! <Condenser Loop Connector Nodes>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Node>,<Outlet Node>,<Loop Name>,<Loop Type>
+! <Condenser Loop Supply Connection>,<Condenser Loop Name>,<Supply Side Outlet Node Name>,<Demand Side Inlet Node Name>
+! <Condenser Loop Return Connection>,<Condenser Loop Name>,<Demand Side Outlet Node Name>,<Supply Side Inlet Node Name>
+! ===============================================================
+! <# Controlled Zones>,<Number of Controlled Zones>
+ #Controlled Zones,6
+! <Controlled Zone>,<Controlled Zone Name>,<Equip List Name>,<Control List Name>,<Zone Node Name>,<# Inlet Nodes>,<# Exhaust Nodes>,<# Return Nodes>
+! <Controlled Zone Inlet>,<Inlet Node Count>,<Controlled Zone Name>,<Supply Air Inlet Node Name>,<SD Sys:Cooling/Heating [DD:Cooling] Inlet Node Name>,<DD Sys:Heating Inlet Node Name>
+! <Controlled Zone Exhaust>,<Exhaust Node Count>,<Controlled Zone Name>,<Exhaust Air Node Name>
+ Controlled Zone,ROOM_BDR_2,ROOM_BDR_2 EQUIPMENT,,ROOM_BDR_2 ZONE AIR NODE,1,0,1
+   Controlled Zone Inlet,1,ROOM_BDR_2,ROOM_BDR_2 SUPPLY INLET,ROOM_BDR_2 ZONE EQUIP INLET,N/A
+   Controlled Zone Return,1,ROOM_BDR_2,ROOM_BDR_2 RETURN OUTLET
+ Controlled Zone,ROOM_BDR_3,ROOM_BDR_3 EQUIPMENT,,ROOM_BDR_3 ZONE AIR NODE,1,0,1
+   Controlled Zone Inlet,1,ROOM_BDR_3,ROOM_BDR_3 SUPPLY INLET,ROOM_BDR_3 ZONE EQUIP INLET,N/A
+   Controlled Zone Return,1,ROOM_BDR_3,ROOM_BDR_3 RETURN OUTLET
+ Controlled Zone,ROOM_BATH,ROOM_BATH EQUIPMENT,,ROOM_BATH ZONE AIR NODE,1,0,1
+   Controlled Zone Inlet,1,ROOM_BATH,ROOM_BATH SUPPLY INLET,ROOM_BATH ZONE EQUIP INLET,N/A
+   Controlled Zone Return,1,ROOM_BATH,ROOM_BATH RETURN OUTLET
+ Controlled Zone,ROOM_LIVING,ROOM_LIVING EQUIPMENT,,ROOM_LIVING ZONE AIR NODE,1,0,1
+   Controlled Zone Inlet,1,ROOM_LIVING,ROOM_LIVING SUPPLY INLET,ROOM_LIVING ZONE EQUIP INLET,N/A
+   Controlled Zone Return,1,ROOM_LIVING,ROOM_LIVING RETURN OUTLET
+ Controlled Zone,ROOM_BDR_1,ROOM_BDR_1 EQUIPMENT,,ROOM_BDR_1 ZONE AIR NODE,1,0,1
+   Controlled Zone Inlet,1,ROOM_BDR_1,ROOM_BDR_1 SUPPLY INLET,ROOM_BDR_1 ZONE EQUIP INLET,N/A
+   Controlled Zone Return,1,ROOM_BDR_1,ROOM_BDR_1 RETURN OUTLET
+ Controlled Zone,ROOM_UTILITY,ROOM_UTILITY EQUIPMENT,,ROOM_UTILITY ZONE AIR NODE,1,0,1
+   Controlled Zone Inlet,1,ROOM_UTILITY,ROOM_UTILITY SUPPLY INLET,ROOM_UTILITY ZONE EQUIP INLET,N/A
+   Controlled Zone Return,1,ROOM_UTILITY,ROOM_UTILITY RETURN OUTLET
+! ===============================================================
+! <#Zone Equipment Lists>,<Number of Zone Equipment Lists>
+ #Zone Equipment Lists,6
+! <Zone Equipment List>,<Zone Equipment List Count>,<Zone Equipment List Name>,<Zone Name>,<Number of Components>
+! <Zone Equipment Component>,<Component Count>,<Component Type>,<Component Name>,<Zone Name>,<Heating Priority>,<Cooling Priority>
+ Zone Equipment List,1,ROOM_BDR_2 EQUIPMENT,ROOM_BDR_2,1
+   Zone Equipment Component,1,ZONEHVAC:AIRDISTRIBUTIONUNIT,ROOM_BDR_2 ATU,ROOM_BDR_2,1,1
+ Zone Equipment List,2,ROOM_BDR_3 EQUIPMENT,ROOM_BDR_3,1
+   Zone Equipment Component,1,ZONEHVAC:AIRDISTRIBUTIONUNIT,ROOM_BDR_3 ATU,ROOM_BDR_3,1,1
+ Zone Equipment List,3,ROOM_BATH EQUIPMENT,ROOM_BATH,1
+   Zone Equipment Component,1,ZONEHVAC:AIRDISTRIBUTIONUNIT,ROOM_BATH ATU,ROOM_BATH,1,1
+ Zone Equipment List,4,ROOM_LIVING EQUIPMENT,ROOM_LIVING,1
+   Zone Equipment Component,1,ZONEHVAC:AIRDISTRIBUTIONUNIT,ROOM_LIVING ATU,ROOM_LIVING,1,1
+ Zone Equipment List,5,ROOM_BDR_1 EQUIPMENT,ROOM_BDR_1,1
+   Zone Equipment Component,1,ZONEHVAC:AIRDISTRIBUTIONUNIT,ROOM_BDR_1 ATU,ROOM_BDR_1,1,1
+ Zone Equipment List,6,ROOM_UTILITY EQUIPMENT,ROOM_UTILITY,1
+   Zone Equipment Component,1,ZONEHVAC:AIRDISTRIBUTIONUNIT,ROOM_UTILITY ATU,ROOM_UTILITY,1,1
+! ===============================================================
+! <#AirLoopHVACs>,<Number of AirLoopHVACs>
+ #AirLoopHVACs,1
+! <AirLoopHVAC>,<Air Loop Name>,<# Return Nodes>,<# Supply Nodes>,<# Zones Cooled>,<# Zones Heated>,<Outdoor Air Used>
+! <AirLoop Return Connections>,<Connection Count>,<AirLoopHVAC Name>,<Zn Eqp Return Node #>,<Zn Eqp Return Node Name>,<AirLoop Return Node #>,<Air Loop Return Node Name>
+! <AirLoop Supply Connections>,<Connection Count>,<AirLoopHVAC Name>,<Zn Eqp Supply Node #>,<Zn Eqp Supply Node Name>,<AirLoop Supply Node #>,<Air Loop Supply Node Name>
+! <Cooled Zone Info>,<Cooled Zone Count>,<Cooled Zone Name>,<Cooled Zone Inlet Node #>,<Cooled Zone Inlet Node Name>,<AirLoopHVAC Name>
+! <Heated Zone Info>,<Heated Zone Count>,<Heated Zone Name>,<Heated Zone Inlet Node #>,<Heated Zone Inlet Node Name>,<AirLoopHVAC Name>
+! <Outdoor Air Connections>,<OA Inlet Node #>,<OA Return Air Inlet Node Name>,<OA Outlet Node #>,<OA Mixed Air Outlet Node Name>,<AirLoopHVAC Name>
+! <AirLoopHVAC Connector>,<Connector Type>,<Connector Name>,<Loop Name>,<Loop Type>,<Number of Inlets/Outlets>
+! <AirLoopHVAC Connector Branches>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Branch>,<Outlet Branch>,<Loop Name>,<Loop Type>
+! <AirLoopHVAC Connector Nodes>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Node>,<Outlet Node>,<Loop Name>,<Loop Type>
+ AirLoopHVAC,DAIKIN ONE STAGE HP,1,1,6,0,Yes
+   AirLoop Return Connections,1,DAIKIN ONE STAGE HP,26,DAIKIN ONE STAGE HP RETURN AIR OUTLET,1,DAIKIN ONE STAGE HP AIR LOOP INLET
+   AirLoop Supply Connections,1,DAIKIN ONE STAGE HP,25,DAIKIN ONE STAGE HP SUPPLY PATH INLET,3,DAIKIN ONE STAGE HP HEATING COIL OUTLET
+   Cooled Zone Info,1,ROOM_BDR_2,10,ROOM_BDR_2 SUPPLY INLET,DAIKIN ONE STAGE HP
+   Cooled Zone Info,2,ROOM_BDR_3,13,ROOM_BDR_3 SUPPLY INLET,DAIKIN ONE STAGE HP
+   Cooled Zone Info,3,ROOM_BATH,16,ROOM_BATH SUPPLY INLET,DAIKIN ONE STAGE HP
+   Cooled Zone Info,4,ROOM_LIVING,7,ROOM_LIVING SUPPLY INLET,DAIKIN ONE STAGE HP
+   Cooled Zone Info,5,ROOM_BDR_1,20,ROOM_BDR_1 SUPPLY INLET,DAIKIN ONE STAGE HP
+   Cooled Zone Info,6,ROOM_UTILITY,23,ROOM_UTILITY SUPPLY INLET,DAIKIN ONE STAGE HP
+   Outdoor Air Connections,1,DAIKIN ONE STAGE HP AIR LOOP INLET,2,DAIKIN ONE STAGE HP MIXED AIR OUTLET,DAIKIN ONE STAGE HP
+! ===============================================================
+! <#Parent Node Connections>,<Number of Parent Node Connections>
+ #Parent Node Connections,17
+! <Parent Node Connection>,<Node Name>,<Node ObjectType>,<Node ObjectName>,<Node ConnectionType>,<Node FluidStream>
+ Parent Node Connection,DAIKIN ONE STAGE HP AIR LOOP INLET,BRANCH,DAIKIN ONE STAGE HP MAIN BRANCH,Inlet,1
+ Parent Node Connection,DAIKIN ONE STAGE HP MIXED AIR OUTLET,BRANCH,DAIKIN ONE STAGE HP MAIN BRANCH,Internal,1
+ Parent Node Connection,DAIKIN ONE STAGE HP HEATING COIL OUTLET,BRANCH,DAIKIN ONE STAGE HP MAIN BRANCH,Outlet,1
+ Parent Node Connection,DAIKIN ONE STAGE HP SUPPLY PATH INLET,AIRLOOPHVAC:SUPPLYPATH,DAIKIN ONE STAGE HP SUPPLY PATH,Inlet,1
+ Parent Node Connection,DAIKIN ONE STAGE HP RETURN AIR OUTLET,AIRLOOPHVAC:RETURNPATH,DAIKIN ONE STAGE HP RETURN PATH,Outlet,1
+ Parent Node Connection,ROOM_BDR_2 SUPPLY INLET,ZONEHVAC:AIRDISTRIBUTIONUNIT,ROOM_BDR_2 ATU,Outlet,1
+ Parent Node Connection,ROOM_BDR_3 SUPPLY INLET,ZONEHVAC:AIRDISTRIBUTIONUNIT,ROOM_BDR_3 ATU,Outlet,1
+ Parent Node Connection,ROOM_BATH SUPPLY INLET,ZONEHVAC:AIRDISTRIBUTIONUNIT,ROOM_BATH ATU,Outlet,1
+ Parent Node Connection,ROOM_LIVING SUPPLY INLET,ZONEHVAC:AIRDISTRIBUTIONUNIT,ROOM_LIVING ATU,Outlet,1
+ Parent Node Connection,ROOM_BDR_1 SUPPLY INLET,ZONEHVAC:AIRDISTRIBUTIONUNIT,ROOM_BDR_1 ATU,Outlet,1
+ Parent Node Connection,ROOM_UTILITY SUPPLY INLET,ZONEHVAC:AIRDISTRIBUTIONUNIT,ROOM_UTILITY ATU,Outlet,1
+ Parent Node Connection,DAIKIN ONE STAGE HP AIR LOOP INLET,AIRLOOPHVAC,DAIKIN ONE STAGE HP,Inlet,1
+ Parent Node Connection,DAIKIN ONE STAGE HP RETURN AIR OUTLET,AIRLOOPHVAC,DAIKIN ONE STAGE HP,Outlet,1
+ Parent Node Connection,DAIKIN ONE STAGE HP SUPPLY PATH INLET,AIRLOOPHVAC,DAIKIN ONE STAGE HP,Inlet,1
+ Parent Node Connection,DAIKIN ONE STAGE HP HEATING COIL OUTLET,AIRLOOPHVAC,DAIKIN ONE STAGE HP,Outlet,1
+ Parent Node Connection,DAIKIN ONE STAGE HP MIXED AIR OUTLET,AIRLOOPHVAC:UNITARYSYSTEM,DAIKIN ONE STAGE HP UNITARY SYSTEM,Inlet,1
+ Parent Node Connection,DAIKIN ONE STAGE HP HEATING COIL OUTLET,AIRLOOPHVAC:UNITARYSYSTEM,DAIKIN ONE STAGE HP UNITARY SYSTEM,Outlet,1
+! ===============================================================
+! <#Non-Parent Node Connections>,<Number of Non-Parent Node Connections>
+ #Non-Parent Node Connections,68
+! <Non-Parent Node Connection>,<Node Name>,<Node ObjectType>,<Node ObjectName>,<Node ConnectionType>,<Node FluidStream>
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP OUTDOOR AIR INLET,OUTDOORAIR:NODELIST,OutdoorAir:NodeList,OutdoorAir,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP COOLING COIL CONDENSER INLET,OUTDOORAIR:NODE,OutdoorAir:Node,OutdoorAir,2
+ Non-Parent Node Connection,ROOM_LIVING ZONE AIR NODE,SETPOINTMANAGER:SINGLEZONE:COOLING,DAIKIN ONE STAGE HP ECONOMIZER SUPPLY AIR TEMP MANAGER,Sensor,1
+ Non-Parent Node Connection,ROOM_LIVING SUPPLY INLET,SETPOINTMANAGER:SINGLEZONE:COOLING,DAIKIN ONE STAGE HP ECONOMIZER SUPPLY AIR TEMP MANAGER,Sensor,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP HEATING COIL OUTLET,SETPOINTMANAGER:SINGLEZONE:COOLING,DAIKIN ONE STAGE HP ECONOMIZER SUPPLY AIR TEMP MANAGER,Setpoint,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP HEATING COIL OUTLET,SETPOINTMANAGER:MIXEDAIR,DAIKIN ONE STAGE HP COOLING COIL AIR TEMP MANAGER,Sensor,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP MIXED AIR OUTLET,SETPOINTMANAGER:MIXEDAIR,DAIKIN ONE STAGE HP COOLING COIL AIR TEMP MANAGER,Sensor,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP SUPPLY FAN OUTLET,SETPOINTMANAGER:MIXEDAIR,DAIKIN ONE STAGE HP COOLING COIL AIR TEMP MANAGER,Sensor,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP MIXED AIR OUTLET,SETPOINTMANAGER:MIXEDAIR,DAIKIN ONE STAGE HP COOLING COIL AIR TEMP MANAGER,Setpoint,1
+ Non-Parent Node Connection,ROOM_BDR_2 ZONE AIR NODE,ZONEHVAC:EQUIPMENTCONNECTIONS,ROOM_BDR_2,ZoneNode,1
+ Non-Parent Node Connection,ROOM_BDR_2 SUPPLY INLET,ZONEHVAC:EQUIPMENTCONNECTIONS,ROOM_BDR_2,ZoneInlet,1
+ Non-Parent Node Connection,ROOM_BDR_2 RETURN OUTLET,ZONEHVAC:EQUIPMENTCONNECTIONS,ROOM_BDR_2,ZoneReturn,1
+ Non-Parent Node Connection,ROOM_BDR_3 ZONE AIR NODE,ZONEHVAC:EQUIPMENTCONNECTIONS,ROOM_BDR_3,ZoneNode,1
+ Non-Parent Node Connection,ROOM_BDR_3 SUPPLY INLET,ZONEHVAC:EQUIPMENTCONNECTIONS,ROOM_BDR_3,ZoneInlet,1
+ Non-Parent Node Connection,ROOM_BDR_3 RETURN OUTLET,ZONEHVAC:EQUIPMENTCONNECTIONS,ROOM_BDR_3,ZoneReturn,1
+ Non-Parent Node Connection,ROOM_BATH ZONE AIR NODE,ZONEHVAC:EQUIPMENTCONNECTIONS,ROOM_BATH,ZoneNode,1
+ Non-Parent Node Connection,ROOM_BATH SUPPLY INLET,ZONEHVAC:EQUIPMENTCONNECTIONS,ROOM_BATH,ZoneInlet,1
+ Non-Parent Node Connection,ROOM_BATH RETURN OUTLET,ZONEHVAC:EQUIPMENTCONNECTIONS,ROOM_BATH,ZoneReturn,1
+ Non-Parent Node Connection,ROOM_LIVING ZONE AIR NODE,ZONEHVAC:EQUIPMENTCONNECTIONS,ROOM_LIVING,ZoneNode,1
+ Non-Parent Node Connection,ROOM_LIVING SUPPLY INLET,ZONEHVAC:EQUIPMENTCONNECTIONS,ROOM_LIVING,ZoneInlet,1
+ Non-Parent Node Connection,ROOM_LIVING RETURN OUTLET,ZONEHVAC:EQUIPMENTCONNECTIONS,ROOM_LIVING,ZoneReturn,1
+ Non-Parent Node Connection,ROOM_BDR_1 ZONE AIR NODE,ZONEHVAC:EQUIPMENTCONNECTIONS,ROOM_BDR_1,ZoneNode,1
+ Non-Parent Node Connection,ROOM_BDR_1 SUPPLY INLET,ZONEHVAC:EQUIPMENTCONNECTIONS,ROOM_BDR_1,ZoneInlet,1
+ Non-Parent Node Connection,ROOM_BDR_1 RETURN OUTLET,ZONEHVAC:EQUIPMENTCONNECTIONS,ROOM_BDR_1,ZoneReturn,1
+ Non-Parent Node Connection,ROOM_UTILITY ZONE AIR NODE,ZONEHVAC:EQUIPMENTCONNECTIONS,ROOM_UTILITY,ZoneNode,1
+ Non-Parent Node Connection,ROOM_UTILITY SUPPLY INLET,ZONEHVAC:EQUIPMENTCONNECTIONS,ROOM_UTILITY,ZoneInlet,1
+ Non-Parent Node Connection,ROOM_UTILITY RETURN OUTLET,ZONEHVAC:EQUIPMENTCONNECTIONS,ROOM_UTILITY,ZoneReturn,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP SUPPLY PATH INLET,AIRLOOPHVAC:ZONESPLITTER,DAIKIN ONE STAGE HP ZONE SPLITTER,Inlet,1
+ Non-Parent Node Connection,ROOM_BDR_2 ZONE EQUIP INLET,AIRLOOPHVAC:ZONESPLITTER,DAIKIN ONE STAGE HP ZONE SPLITTER,Outlet,1
+ Non-Parent Node Connection,ROOM_BDR_3 ZONE EQUIP INLET,AIRLOOPHVAC:ZONESPLITTER,DAIKIN ONE STAGE HP ZONE SPLITTER,Outlet,1
+ Non-Parent Node Connection,ROOM_BATH ZONE EQUIP INLET,AIRLOOPHVAC:ZONESPLITTER,DAIKIN ONE STAGE HP ZONE SPLITTER,Outlet,1
+ Non-Parent Node Connection,ROOM_LIVING ZONE EQUIP INLET,AIRLOOPHVAC:ZONESPLITTER,DAIKIN ONE STAGE HP ZONE SPLITTER,Outlet,1
+ Non-Parent Node Connection,ROOM_BDR_1 ZONE EQUIP INLET,AIRLOOPHVAC:ZONESPLITTER,DAIKIN ONE STAGE HP ZONE SPLITTER,Outlet,1
+ Non-Parent Node Connection,ROOM_UTILITY ZONE EQUIP INLET,AIRLOOPHVAC:ZONESPLITTER,DAIKIN ONE STAGE HP ZONE SPLITTER,Outlet,1
+ Non-Parent Node Connection,ROOM_BDR_2 ZONE EQUIP INLET,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,ROOM_BDR_2 CV,Inlet,1
+ Non-Parent Node Connection,ROOM_BDR_2 SUPPLY INLET,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,ROOM_BDR_2 CV,Outlet,1
+ Non-Parent Node Connection,ROOM_BDR_3 ZONE EQUIP INLET,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,ROOM_BDR_3 CV,Inlet,1
+ Non-Parent Node Connection,ROOM_BDR_3 SUPPLY INLET,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,ROOM_BDR_3 CV,Outlet,1
+ Non-Parent Node Connection,ROOM_BATH ZONE EQUIP INLET,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,ROOM_BATH CV,Inlet,1
+ Non-Parent Node Connection,ROOM_BATH SUPPLY INLET,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,ROOM_BATH CV,Outlet,1
+ Non-Parent Node Connection,ROOM_LIVING ZONE EQUIP INLET,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,ROOM_LIVING CV,Inlet,1
+ Non-Parent Node Connection,ROOM_LIVING SUPPLY INLET,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,ROOM_LIVING CV,Outlet,1
+ Non-Parent Node Connection,ROOM_BDR_1 ZONE EQUIP INLET,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,ROOM_BDR_1 CV,Inlet,1
+ Non-Parent Node Connection,ROOM_BDR_1 SUPPLY INLET,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,ROOM_BDR_1 CV,Outlet,1
+ Non-Parent Node Connection,ROOM_UTILITY ZONE EQUIP INLET,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,ROOM_UTILITY CV,Inlet,1
+ Non-Parent Node Connection,ROOM_UTILITY SUPPLY INLET,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,ROOM_UTILITY CV,Outlet,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP RETURN AIR OUTLET,AIRLOOPHVAC:ZONEMIXER,DAIKIN ONE STAGE HP ZONE MIXER,Outlet,1
+ Non-Parent Node Connection,ROOM_BDR_2 RETURN OUTLET,AIRLOOPHVAC:ZONEMIXER,DAIKIN ONE STAGE HP ZONE MIXER,Inlet,1
+ Non-Parent Node Connection,ROOM_BDR_3 RETURN OUTLET,AIRLOOPHVAC:ZONEMIXER,DAIKIN ONE STAGE HP ZONE MIXER,Inlet,1
+ Non-Parent Node Connection,ROOM_BATH RETURN OUTLET,AIRLOOPHVAC:ZONEMIXER,DAIKIN ONE STAGE HP ZONE MIXER,Inlet,1
+ Non-Parent Node Connection,ROOM_LIVING RETURN OUTLET,AIRLOOPHVAC:ZONEMIXER,DAIKIN ONE STAGE HP ZONE MIXER,Inlet,1
+ Non-Parent Node Connection,ROOM_BDR_1 RETURN OUTLET,AIRLOOPHVAC:ZONEMIXER,DAIKIN ONE STAGE HP ZONE MIXER,Inlet,1
+ Non-Parent Node Connection,ROOM_UTILITY RETURN OUTLET,AIRLOOPHVAC:ZONEMIXER,DAIKIN ONE STAGE HP ZONE MIXER,Inlet,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP MIXED AIR OUTLET,OUTDOORAIR:MIXER,DAIKIN ONE STAGE HP OA MIXING BOX,Outlet,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP OUTDOOR AIR INLET,OUTDOORAIR:MIXER,DAIKIN ONE STAGE HP OA MIXING BOX,Inlet,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP RELIEF AIR OUTLET,OUTDOORAIR:MIXER,DAIKIN ONE STAGE HP OA MIXING BOX,ReliefAir,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP AIR LOOP INLET,OUTDOORAIR:MIXER,DAIKIN ONE STAGE HP OA MIXING BOX,Inlet,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP MIXED AIR OUTLET,FAN:ONOFF,DAIKIN ONE STAGE HP SUPPLY FAN,Inlet,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP SUPPLY FAN OUTLET,FAN:ONOFF,DAIKIN ONE STAGE HP SUPPLY FAN,Outlet,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP SUPPLY FAN OUTLET,COIL:COOLING:DX:SINGLESPEED,DAIKIN ONE STAGE HP COOLING COIL,Inlet,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP COOLING COIL OUTLET,COIL:COOLING:DX:SINGLESPEED,DAIKIN ONE STAGE HP COOLING COIL,Outlet,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP COOLING COIL CONDENSER INLET,COIL:COOLING:DX:SINGLESPEED,DAIKIN ONE STAGE HP COOLING COIL,OutsideAirReference,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP COOLING COIL OUTLET,COIL:HEATING:DX:SINGLESPEED,DAIKIN ONE STAGE HP HEATING COIL,Inlet,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP HEATING COIL OUTLET,COIL:HEATING:DX:SINGLESPEED,DAIKIN ONE STAGE HP HEATING COIL,Outlet,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP MIXED AIR OUTLET,CONTROLLER:OUTDOORAIR,DAIKIN ONE STAGE HP OA CONTROLLER,Sensor,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP OUTDOOR AIR INLET,CONTROLLER:OUTDOORAIR,DAIKIN ONE STAGE HP OA CONTROLLER,Actuator,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP RELIEF AIR OUTLET,CONTROLLER:OUTDOORAIR,DAIKIN ONE STAGE HP OA CONTROLLER,Actuator,1
+ Non-Parent Node Connection,DAIKIN ONE STAGE HP AIR LOOP INLET,CONTROLLER:OUTDOORAIR,DAIKIN ONE STAGE HP OA CONTROLLER,Sensor,1

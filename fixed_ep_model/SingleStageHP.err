@@ -1,0 +1,45 @@
+Program Version,EnergyPlus, Version 9.5.0-de239b2e5f, YMD=2025.08.19 05:49,
+   ** Warning ** Output:PreprocessorMessage="GroundTempCalc - Slab" has the following Warning condition:
+   **   ~~~   ** Slab thickness [0.122 m] reset to 0.122 m  for computational stability.
+   ************* Beginning Zone Sizing Calculations
+   ** Warning ** GetHTSurfaceData: Surfaces with interface to Ground found but no "Ground Temperatures" were input.
+   **   ~~~   ** Found first in surface=CRAWLSPACE_WALL_NORTH_LOWER
+   **   ~~~   ** Defaults, constant throughout the year of (18.0) will be used.
+   ** Warning ** CalculateZoneVolume: The Zone="CRAWLSPACE" is not fully enclosed. To be fully enclosed, each edge of a surface must also be an edge on one other surface.
+   **   ~~~   **   The zone volume was calculated using the floor area times ceiling height method where the floor and ceiling are the same except for the z-coordinates.
+   ************* Beginning System Sizing Calculations
+   ** Warning ** GetDXCoils: Coil:Cooling:DX:SingleSpeed="DAIKIN ONE STAGE HP COOLING COIL" curve values
+   **   ~~~   ** ... Total Cooling Capacity Function of Temperature Curve Name = DAIKIN FIT COOLING CAP SINGLE-FT output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.887
+   ** Warning ** GetDXCoils: Coil:Heating:DX:SingleSpeed="DAIKIN ONE STAGE HP HEATING COIL" curve values
+   **   ~~~   ** ... Energy Input Ratio Function of Temperature Curve Name = DAIKIN FIT HEATING COIL SINGLE-EIR-NEW output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 0.780
+   ************* SizeUnitarySystem: Potential issue with equipment sizing for AirLoopHVAC:UnitarySystem DAIKIN ONE STAGE HP UNITARY SYSTEM
+   **   ~~~   ** User-Specified Nominal Heating Capacity [W] = 8323.00000
+   **   ~~~   ** differs from Design Size Nominal Heating Capacity [W] = 14660.14188
+   **   ~~~   ** This may, or may not, indicate mismatched component sizes.
+   **   ~~~   ** Verify that the value entered is intended and is consistent with other components.
+   ************* SizeDXCoil: Potential issue with equipment sizing for Coil:Cooling:DX:SingleSpeed DAIKIN ONE STAGE HP COOLING COIL
+   **   ~~~   ** User-Specified Rated Air Flow Rate [m3/s] = 0.47200
+   **   ~~~   ** differs from Design Size Rated Air Flow Rate [m3/s] = 0.40378
+   **   ~~~   ** This may, or may not, indicate mismatched component sizes.
+   **   ~~~   ** Verify that the value entered is intended and is consistent with other components.
+   ************* SizeDXCoil: Potential issue with equipment sizing for Coil:Heating:DX:SingleSpeed DAIKIN ONE STAGE HP HEATING COIL
+   **   ~~~   ** User-Specified Rated Air Flow Rate [m3/s] = 0.47200
+   **   ~~~   ** differs from Design Size Rated Air Flow Rate [m3/s] = 0.40378
+   **   ~~~   ** This may, or may not, indicate mismatched component sizes.
+   **   ~~~   ** Verify that the value entered is intended and is consistent with other components.
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ************* Simulation Error Summary *************
+   ************* There are 16 unused schedules in input.
+   ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 4 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 5 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  2.51sec

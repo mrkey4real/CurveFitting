@@ -1,0 +1,611 @@
+Shadowing Combinations
+..Solar Distribution=FullInteriorAndExterior
+..In the following, only the first 10 reference surfaces will be shown.
+..But all surfaces are used in the calculations.
+==================================
+Surface=SHADING_WEST is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-SHADING_WEST is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=7
+..Surface=Mir-SHADING_SOUTH_2
+..Surface=SHADING_SOUTH_1
+..Surface=SHADING_NORTH_1
+..Surface=Mir-SHADING_NORTH_2
+..Surface=PLENUM_WALL_SOUTH
+..Surface=PLENUM_WALL_NORTH
+..Surface=PLENUM_ROOF_2
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=SHADING_EAST is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-SHADING_EAST is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=7
+..Surface=SHADING_SOUTH_2
+..Surface=Mir-SHADING_SOUTH_1
+..Surface=Mir-SHADING_NORTH_1
+..Surface=SHADING_NORTH_2
+..Surface=PLENUM_WALL_SOUTH
+..Surface=PLENUM_WALL_NORTH
+..Surface=PLENUM_ROOF_1
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=SHADING_SOUTH_2 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=SHADING_SOUTH_1
+..Surface=SHADING_NORTH_1
+..Surface=PLENUM_WALL_SOUTH
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-SHADING_SOUTH_2 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=SHADING_SOUTH_1 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=SHADING_SOUTH_2
+..Surface=SHADING_NORTH_2
+..Surface=PLENUM_WALL_SOUTH
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-SHADING_SOUTH_1 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=SHADING_NORTH_1 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=SHADING_SOUTH_2
+..Surface=SHADING_NORTH_2
+..Surface=PLENUM_WALL_NORTH
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-SHADING_NORTH_1 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=SHADING_NORTH_2 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=SHADING_SOUTH_1
+..Surface=SHADING_NORTH_1
+..Surface=PLENUM_WALL_NORTH
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-SHADING_NORTH_2 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BDR_2_WALL_EAST is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=1
+..Surface=SHADING_EAST
+Number of back surfaces=5
+...Surface=ROOM_BDR_2_WALL_NORTH
+...Surface=ROOM_BDR_2_WALL_SOUTH
+...Surface=ROOM_BDR_2_WALL_WEST
+...Surface=ROOM_BDR_2_FLOOR
+...Surface=ROOM_BDR_2_CEILING
+Number of receiving sub surfaces=1
+....Surface=ROOM_BDR_2_WALL_EAST_WINDOW
+==================================
+Surface=ROOM_BDR_2_WALL_EAST_WINDOW is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BDR_2_WALL_NORTH is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BDR_2_WALL_SOUTH is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=4
+..Surface=SHADING_WEST
+..Surface=SHADING_EAST
+..Surface=SHADING_SOUTH_2
+..Surface=SHADING_SOUTH_1
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BDR_2_WALL_WEST is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BDR_2_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BDR_2_CEILING is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BR2_THERMALMASS is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BDR_3_WALL_EAST is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BDR_3_WALL_SOUTH is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=4
+..Surface=SHADING_WEST
+..Surface=SHADING_EAST
+..Surface=SHADING_SOUTH_2
+..Surface=SHADING_SOUTH_1
+Number of back surfaces=5
+...Surface=ROOM_BDR_3_WALL_EAST
+...Surface=ROOM_BDR_3_WALL_WEST
+...Surface=ROOM_BDR_3_WALL_NORTH
+...Surface=ROOM_BDR_3_FLOOR
+...Surface=ROOM_BDR_3_CEILING
+Number of receiving sub surfaces=1
+....Surface=ROOM_BDR_3_WALL_SOUTH_WINDOW
+==================================
+Surface=ROOM_BDR_3_WALL_SOUTH_WINDOW is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BDR_3_WALL_WEST is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=1
+..Surface=SHADING_WEST
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BDR_3_WALL_NORTH is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BDR_3_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BDR_3_CEILING is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BR3_THERMALMASS is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=UNTILITY_THERMALMASS is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BATH_THERMALMASS is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BATH_WALL_EAST is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BATH_WALL_SOUTH is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BATH_WALL_WEST is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=1
+..Surface=SHADING_WEST
+Number of back surfaces=5
+...Surface=ROOM_BATH_WALL_EAST
+...Surface=ROOM_BATH_WALL_SOUTH
+...Surface=ROOM_BATH_WALL_NORTH
+...Surface=ROOM_BATH_FLOOR
+...Surface=ROOM_BATH_CEILING
+Number of receiving sub surfaces=1
+....Surface=ROOM_BATH_WALL_WEST_WINDOW
+==================================
+Surface=ROOM_BATH_WALL_WEST_WINDOW is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BATH_WALL_NORTH is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BATH_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BATH_CEILING is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_LIVING_WALL_SOUTH_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_LIVING_WALL_WEST_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_LIVING_WALL_EAST is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=1
+..Surface=SHADING_EAST
+Number of back surfaces=12
+...Surface=ROOM_LIVING_WALL_SOUTH_1
+...Surface=ROOM_LIVING_WALL_WEST_1
+...Surface=ROOM_LIVING_WALL_NORTH_1
+...Surface=ROOM_LIVING_WALL_WEST_2
+...Surface=ROOM_LIVING_WALL_SOUTH_2
+...Surface=ROOM_LIVING_WALL_NORTH_2
+...Surface=ROOM_LIVING_FLOOR_1
+...Surface=ROOM_LIVING_FLOOR_2
+...Surface=ROOM_LIVING_CEILING_1
+...Surface=ROOM_LIVING_CEILING_2
+Number of receiving sub surfaces=3
+....Surface=ROOM_LIVING_WALL_EAST_DOOR
+....Surface=ROOM_LIVING_WALL_EAST_WINDOW_1
+....Surface=ROOM_LIVING_WALL_EAST_WINDOW_2
+==================================
+Surface=ROOM_LIVING_WALL_EAST_DOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_LIVING_WALL_EAST_WINDOW_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_LIVING_WALL_EAST_WINDOW_2 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_LIVING_WALL_NORTH_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_LIVING_WALL_WEST_2 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=1
+..Surface=SHADING_WEST
+Number of back surfaces=13
+...Surface=ROOM_LIVING_WALL_SOUTH_1
+...Surface=ROOM_LIVING_WALL_WEST_1
+...Surface=ROOM_LIVING_WALL_EAST
+...Surface=ROOM_LIVING_WALL_NORTH_1
+...Surface=ROOM_LIVING_WALL_SOUTH_2
+...Surface=ROOM_LIVING_WALL_NORTH_2
+...Surface=ROOM_LIVING_FLOOR_1
+...Surface=ROOM_LIVING_FLOOR_2
+...Surface=ROOM_LIVING_CEILING_1
+...Surface=ROOM_LIVING_CEILING_2
+Number of receiving sub surfaces=2
+....Surface=ROOM_LIVING_WALL_WEST_2_WINDOW_1
+....Surface=ROOM_LIVING_WALL_WEST_2_WINDOW_2
+==================================
+Surface=ROOM_LIVING_WALL_WEST_2_WINDOW_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_LIVING_WALL_WEST_2_WINDOW_2 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_LIVING_WALL_SOUTH_2 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_LIVING_WALL_NORTH_2 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_LIVING_FLOOR_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_LIVING_FLOOR_2 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_LIVING_CEILING_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_LIVING_CEILING_2 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=LIVING_THERMALMASS is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BDR_1_WALL_EAST is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=1
+..Surface=SHADING_EAST
+Number of back surfaces=6
+...Surface=ROOM_BDR_1_WALL_SOUTH
+...Surface=ROOM_BDR_1_WALL_WEST
+...Surface=ROOM_BDR_1_WALL_NORTH
+...Surface=ROOM_BDR_1_FLOOR
+...Surface=ROOM_BDR_1_CEILING
+...Surface=ROOM_BDR_1_WALL_NORTH_WINDOW
+Number of receiving sub surfaces=1
+....Surface=ROOM_BDR_1_WALL_EAST_WINDOW
+==================================
+Surface=ROOM_BDR_1_WALL_EAST_WINDOW is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BDR_1_WALL_SOUTH is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BDR_1_WALL_WEST is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BDR_1_WALL_NORTH is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=4
+..Surface=SHADING_WEST
+..Surface=SHADING_EAST
+..Surface=SHADING_NORTH_1
+..Surface=SHADING_NORTH_2
+Number of back surfaces=6
+...Surface=ROOM_BDR_1_WALL_EAST
+...Surface=ROOM_BDR_1_WALL_SOUTH
+...Surface=ROOM_BDR_1_WALL_WEST
+...Surface=ROOM_BDR_1_FLOOR
+...Surface=ROOM_BDR_1_CEILING
+...Surface=ROOM_BDR_1_WALL_EAST_WINDOW
+Number of receiving sub surfaces=1
+....Surface=ROOM_BDR_1_WALL_NORTH_WINDOW
+==================================
+Surface=ROOM_BDR_1_WALL_NORTH_WINDOW is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BDR_1_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_BDR_1_CEILING is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BR1_THERMALMASS is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_UTILITY_WALL_EAST is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_UTILITY_WALL_SOUTH is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_UTILITY_WALL_WEST is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=1
+..Surface=SHADING_WEST
+Number of back surfaces=0
+Number of receiving sub surfaces=1
+....Surface=ROOM_UTILITY_WALL_WEST_DOOR
+==================================
+Surface=ROOM_UTILITY_WALL_WEST_DOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_UTILITY_WALL_NORTH is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=4
+..Surface=SHADING_WEST
+..Surface=SHADING_EAST
+..Surface=SHADING_NORTH_1
+..Surface=SHADING_NORTH_2
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_UTILITY_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOM_UTILITY_CEILING is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=PLENUM_WALL_SOUTH is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=2
+..Surface=SHADING_SOUTH_2
+..Surface=SHADING_SOUTH_1
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=PLENUM_WALL_NORTH is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=2
+..Surface=SHADING_NORTH_1
+..Surface=SHADING_NORTH_2
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=iz-ROOM_BDR_2_CEILING is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=iz-ROOM_BDR_3_CEILING is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=iz-ROOM_BATH_CEILING is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=iz-ROOM_LIVING_CEILING_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=iz-ROOM_BDR_1_CEILING is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=iz-ROOM_UTILITY_CEILING is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=iz-ROOM_LIVING_CEILING_2 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=PLENUM_ROOF_1 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=PLENUM_ROOF_2 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=CRAWLSPACE_WALL_NORTH_LOWER is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=CRAWLSPACE_WALL_SOUTH_LOWER is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=CRAWLSPACE_WALL_WEST_LOWER is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=CRAWLSPACE_WALL_SOUTH_UPPER is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=4
+..Surface=SHADING_WEST
+..Surface=SHADING_EAST
+..Surface=SHADING_SOUTH_2
+..Surface=SHADING_SOUTH_1
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=CRAWLSPACE_WALL_WEST_UPPER is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=1
+..Surface=SHADING_WEST
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=CRAWLSPACE_WALL_NORTH_UPPER is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=4
+..Surface=SHADING_WEST
+..Surface=SHADING_EAST
+..Surface=SHADING_NORTH_1
+..Surface=SHADING_NORTH_2
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=CRAWLSPACE_WALL_EAST_UPPER is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=1
+..Surface=SHADING_EAST
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=CRAWLSPACE_WALL_EAST_LOWER is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=1
+..Surface=SHADING_EAST
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=CRAWLSPACE_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=iz-ROOM_BDR_2_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=iz-ROOM_BDR_3_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=iz-ROOM_BATH_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=iz-ROOM_LIVING_FLOOR_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=iz-ROOM_BDR_1_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=iz-ROOM_UTILITY_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=iz-ROOM_LIVING_FLOOR_2 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
